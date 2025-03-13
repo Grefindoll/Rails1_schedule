@@ -1,0 +1,51 @@
+<!-- スケジュール詳細-->
+
+<!-- スケジュール編集--><!-- スケジュールの新規作成-->
+<div class="show-body">
+  <div class="show-top">
+    <h2>予定詳細</h2>
+    <div class="show-top-button">
+      <%= link_to "← 一覧に戻る", posts_path %>
+    </div>
+    <div>
+      <%= @post.id %>
+    </div>
+  </div>
+
+  <div class="show-content">
+    <table class="schedule-table">
+      <tr>
+        <td class="show-title">タイトル</td>
+        <td><%= @post.title %></td>
+      </tr>
+      <tr>
+        <td class="show-start">開始日</td>
+        <td><%= @post.start_date %></td>
+      </tr>
+      <tr>
+        <td class="show-end">終了日</td>
+        <td><%= @post.end_date %></td>
+      </tr>
+      <tr>
+        <td class="show-all-day">終日</td>
+        <td>
+          <% if @post.all_day %>
+            <p>○</p>
+          <% else %>
+            <p></p>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td class="show-memo">メモ</td>
+        <td><%= @post.memo %></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="show-edit-button">
+    <%= link_to "編集する", edit_post_path(@post) %>
+  </div>
+
+
+</div>

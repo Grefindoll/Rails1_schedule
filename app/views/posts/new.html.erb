@@ -1,0 +1,39 @@
+<!-- スケジュールの新規作成-->
+<div class="new-body">
+  <div class="new-top">
+    <h2>予定作成</h2>
+  </div>
+
+  <div class="new-form">
+    <%= form_with model: @post do |f| %>
+      <div class="field title-form">
+        <%= f.label :title, "タイトル" %>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="field start-form">
+        <%= f.label :start_date, "開始日" %>
+        <%= f.date_field :start_date %>
+      </div>
+
+      <div class="field end-form">
+        <%= f.label :end_date, "終了日" %>
+        <%= f.date_field :end_date %>
+      </div>
+
+      <div class="field all-day-form">
+        <%= f.label :all_day, "終日" %>
+        <%= f.check_box :all_day %>
+      </div>
+
+      <div class="field memo-form">
+        <%= f.label :memo, "メモ" %>
+        <%= f.text_area :memo %>
+      </div>
+
+      <div class="action">
+        <%= f.submit "予定を作成する" %>
+      </div>
+    <% end %>
+  </div>
+</div>
