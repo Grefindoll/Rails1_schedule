@@ -2,15 +2,31 @@
 <html>
   <head>
     <title>ScheduleApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <div class="logo"><%= link_to 'マイスケ', root_path %></div>
+
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><%= link_to '予定一覧', posts_path %></li>
+            <li><%= link_to '新規作成', new_post_path %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <% flash.each do |key, message| %>
+    <div class="<%= key %>"><%= message %></div>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>

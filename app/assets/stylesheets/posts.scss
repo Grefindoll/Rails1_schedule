@@ -1,0 +1,224 @@
+.index-body{
+  width: 100%;
+  padding-bottom: 400px;
+  background-color: rgb(233, 233, 233); 
+}
+
+.index-top {
+  text-align: center;
+  height: 80px;
+}
+
+.index-top h2 {
+  font-size: 32px;
+  line-height: 80px;
+}
+
+.index-main-wrapper {
+  width: 100%;
+  max-width: 1200px;  /* 最大幅を設定 */
+  margin: 0 auto;     /* 中央寄せ */
+}
+
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #4f4f4f;
+  padding: 4px;
+  padding-left: 8px;
+  text-align: left;
+  white-space: nowrap;
+  min-width: 32px;
+}
+
+.schedule-table th {
+  background-color: #5fbca7;
+  font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.schedule-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.schedule-table a {
+  text-decoration: none;
+  color: #007BFF;
+  margin-right: 12px;
+}
+
+.schedule-table a:hover {
+  text-decoration: underline;
+}
+
+.index-total {
+  margin-top: 64px;
+  height: 64px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+// ここからnew
+.notice {
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+}
+
+.alert {
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+}
+
+.new-body {
+  background-color: rgb(233, 233, 233);
+  padding-bottom: 400px;
+}
+
+.new-top {
+  height: 80px;
+}
+
+.new-top h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 80px;
+}
+
+.new-form {
+  display: flex;
+  justify-content: center;  /* 中央寄せ */
+  align-items: center;      /* 縦方向にも中央寄せ */
+  padding: 40px;
+  background-color: #ffffff;
+  max-width: 600px;         /* 横幅を制限 */
+  width: 640 px;              /* 幅は画面いっぱいに */
+  margin: 0 auto;           /* フォームを中央に配置 */
+}
+
+
+
+.field {
+  width: 450px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.field :nth-child(1) {
+  display: inline-block;
+  font-size: 16px;
+  width: 80px;
+}
+
+.field :nth-child(2) {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.action {
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 32px;
+  width: 136px;
+  padding: 4px 16px;
+  background-color: #5fbca7;
+}
+
+.title-form :nth-child(2){
+  width: 370px;
+}
+
+.memo-form :nth-child(2){
+  width: 370px;
+  height: 130px;
+  word-wrap: break-word; /* 長い単語が折り返される */
+  white-space: normal;  /* 折り返しを有効にする */
+}
+
+
+.edit-cancel-button a {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+// ここからshow
+.show-body {
+  background-color: rgb(233, 233, 233);
+  padding-bottom: 400px;
+}
+
+.show-top {
+  height: 160px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.show-top h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 80px;
+}
+
+.show-top-button {
+  color: #007BFF;
+  margin-bottom: 16px;
+}
+
+.show-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.show-content table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.show-edit-button {
+  margin: 0 auto;
+  margin-top: 32px;
+  text-align: center;
+  width: 160px;
+  background-color: #5fbca7;
+  border: 1px solid black;
+  padding: 8px;
+  color: white;
+}
+
+.show-title,
+.show-start,
+.show-end,
+.show-all-day,
+.show-memo {
+  width: 100px;
+}
+
+
+.show-content td {
+  word-break: break-all; 
+  white-space: normal;
+}
